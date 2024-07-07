@@ -7,7 +7,7 @@ terraform {
   }
 }
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-2"
 }
 
 data "aws_caller_identity" "current" {}
