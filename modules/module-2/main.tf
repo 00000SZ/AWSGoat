@@ -141,6 +141,8 @@ resource "aws_db_instance" "database-instance" {
   availability_zone      = "ap-southeast-1a"
   db_subnet_group_name   = aws_db_subnet_group.database-subnet-group.name
   vpc_security_group_ids = [aws_security_group.database-security-group.id]
+  storage_encrypted      = true
+  kms_key_id             = "<Provide the ARN of the KMS key>"
 }
 
 
