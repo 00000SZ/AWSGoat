@@ -453,6 +453,7 @@ resource "aws_lb_listener" "listener" {
     type             = "forward"
     target_group_arn = aws_lb_target_group.target_group.id
   }
+  ssl_policy = "ELBSecurityPolicy-TLS-1-2-2017-01"
 }
 
 
